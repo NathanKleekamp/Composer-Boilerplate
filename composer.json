@@ -1,0 +1,37 @@
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.3",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.3.zip"
+                },
+                "require" : {
+                    "fancyguy/webroot-installer": "1.1.0"
+                }
+            }
+        },
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:NathanKleekamp/Fuzzy.git"
+        }
+    ],
+    "require": {
+        "wordpress": "4.3",
+        "fancyguy/webroot-installer": "1.1.0",
+        "NathanKleekamp/Fuzzy": "dev-master",
+        "wpackagist-plugin/regenerate-thumbnails": "2.2.4"
+    },
+    "extra": {
+        "webroot-dir": "wp",
+        "webroot-package": "wordpress"
+    }
+}
